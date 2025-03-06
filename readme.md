@@ -7,7 +7,7 @@ A test suite that tests some of the main app functionalities, such as: \
 ☑️ Clearing all tasks 
 
 The test results will be displayed in a report. An example report in HTML format is as follows:
-![image](https://github.com/user-attachments/assets/a64a98de-5445-45c8-8c70-d2647f481fa0)
+![image](https://github.com/user-attachments/assets/8eeb2dcb-3675-4460-bfa8-dd4df04d0657)
 
 
 
