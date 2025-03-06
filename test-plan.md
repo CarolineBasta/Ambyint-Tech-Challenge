@@ -9,7 +9,7 @@ The testing will focus on the following features:
 - Deleting a To-Do Item
 
 ## 3. Assumptions and Prerequisites
-- The application is accessible through http://127.0.0.1:3000 if running the automated tests or throught Index.HTML if accessing it manually.
+- The application is accessible through http://127.0.0.1:3000 if running the automated tests or through Index.html if accessing it manually.
 - The user starts on a clean state (i.e. no existing tasks in localStorage)
 
 ## 4. Test Environment
@@ -38,14 +38,14 @@ The testing will focus on the following features:
   - **Preconditions**: At least one task already exists in the to-do list.
   - **Steps:** 
                1. Identify the task to be edited, for example: "Work"  
-               2. Click on the 3-dots menu next to that task
+               2. Click on the 3-dots menu next to that task on the right
                3. Click on the Edit button
-               4. In the textbook, type the new task name, for example, "Workout"
+               4. In the textbox, type the new task name, for example, "Workout"
                5. Press Enter on your keyboard
   - **Expected Result:** 
                1. The UI reflects the new task name.
                2. No new task is created with the new name, only the existing one is updated.
-               3. The localStorage shows the updated name.
+               3. The new task is still saved in localStorage and can still be found under the “Pending” tab.
   
 
 ### 5.3. Marking a To-Do Item as Complete
@@ -57,15 +57,14 @@ The testing will focus on the following features:
 
   - **Expected Result:** 
                1. The task is crossed out
-               2. No new task is created with the new name, only the existing one is updated.
-               3. The task upears under the "Completed" tab.
+               3. The task upears under the "Completed" tab, and disappears from the "Pending" tab
   
 ### 5.4. Deleting a To-Do Item 
 - **Test Case 1:** 
   - **Preconditions**: At least one task already exists in the to-do list.
   - **Steps:** 
                1. Identify the task to be marked deleted
-               2. Click on the 3-dots menu next to that task
+               2. Click on the 3-dots menu next to that task on the right
                3. Click on the Delete button
 
   - **Expected Result:** 
@@ -77,7 +76,7 @@ The testing will focus on the following features:
                1. Click on the "Clear All" button
 
   - **Expected Result:** 
-               1. All tasks are deleted and the UI reflects that no tasks exists.
+               1. All task(s) are deleted, and the UI reflects that no task(s) exists.
                2. The "You don't have any task here" message appears again.
 
 
